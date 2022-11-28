@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 175vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+}
+
+.qualities {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+h2:nth-child(1) {
+  font-weight: 200;
+}
+
+h2:nth-child(2) {
+  margin-bottom: 1rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.qualities p {
+  color: var(--Grayish-Blue);
+  max-width: 540px; 
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  min-height: 250px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 17px 0px #ADADAD;
+}
+
+.card h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--Grayish-Blue);
+  font-size: 0.825rem;
+}
+
+.card img {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.cyan {
+  border-top: 5px solid var(--Cyan);
+}
+
+.red {
+  border-top: 5px solid var(--Red);
+}
+
+.orange {
+  border-top: 5px solid var(--Orange);
+}
+
+.blue {
+  border-top: 5px solid var(--Blue);
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 63rem;
+  }
+
+  .container {
+    width: unset;
+  }
+
+  .card {
+    width: 20rem;
+  }
+  .qualities{
+    padding: 0 15rem;
+  }
+}
